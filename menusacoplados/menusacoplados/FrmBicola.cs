@@ -7,24 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 
 namespace menusacoplados
 {
-    public partial class FrmCola1 : Form
+    public partial class FrmBicola : Form
     {
-        public FrmCola1()
+        public FrmBicola()
         {
             InitializeComponent();
         }
 
-        private void Form3_Activated(object sender, EventArgs e)
+        private void Form4_Activated(object sender, EventArgs e)
         {
             Left = 0;
-            Top = 0;
+            Top= 0;
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void Form4_Load(object sender, EventArgs e)
         {
 
         }

@@ -13,8 +13,8 @@ namespace menusacoplados
     public partial class FrmMenu : Form
     {
         FrmPilas P1 =new FrmPilas();
-        FrmCola1 f3 = new FrmCola1();
-        FrmCola2 f4 = new FrmCola2();
+        FrmCola C1 = new FrmCola();
+        FrmBicola B1 = new FrmBicola();
         FrmListaSimple l1 = new FrmListaSimple();
         FrmListasCiruclares l2 = new FrmListasCiruclares();
         FrmArrayList l3 = new FrmArrayList();
@@ -26,19 +26,20 @@ namespace menusacoplados
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            P1.MdiParent = this; 
-            f3.MdiParent = this; 
-            f4.MdiParent = this;
+            P1.MdiParent = this;
+            C1.MdiParent = this;
+            B1.MdiParent = this;
             l1.MdiParent = this; 
             l2.MdiParent = this; 
             l3.MdiParent = this;
+            au.MdiParent = this;
         }
 
         private void conPilasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             P1.Show();
-            f3.Hide();
-            f4.Hide();
+            C1.Hide();
+            B1.Hide();
             l1.Hide();
             l2.Hide();
             l3.Hide();
@@ -47,8 +48,8 @@ namespace menusacoplados
         private void conHilosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             P1.Hide();
-            f3.Show();
-            f4.Hide();
+            C1.Show();
+            B1.Hide();
             l1.Hide();
             l2.Hide();
             l3.Hide();
@@ -57,17 +58,13 @@ namespace menusacoplados
         private void conSeñalizerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             P1.Hide();
-            f3.Hide();
-            f4.Show();
+            C1.Hide();
+            B1.Show();
             l1.Hide();
             l2.Hide();
             l3.Hide();
         }
 
-        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
 
         private void aplicacionnesXMLToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -79,17 +76,12 @@ namespace menusacoplados
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Hide();
-            au.Show();
-        }
 
         private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             P1.Hide();
-            f3.Hide();
-            f4.Hide();
+            C1.Hide();
+            B1.Hide();
             l1.Show();
             l2.Hide();
             l3.Hide();
@@ -97,9 +89,9 @@ namespace menusacoplados
 
         private void listaEnlazadaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            f2.Hide();
-            f3.Hide();
-            f4.Hide();
+            P1.Hide();
+            C1.Hide();
+            B1.Hide();
             l1.Hide();
             l2.Show();
             l3.Hide();
@@ -107,12 +99,27 @@ namespace menusacoplados
 
         private void arrayListToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            f2.Hide();
-            f3.Hide();
-            f4.Hide();
+            P1.Hide();
+            C1.Hide();
+            B1.Hide();
             l1.Hide();
             l2.Hide();
             l3.Show();
+        }
+
+        private void autoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            au.Show();
+        }
+
+        private void informaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

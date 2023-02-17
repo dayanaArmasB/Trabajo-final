@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace menusacoplados
 {
-    internal class Nodo
+    internal class NodoList
     {
         public string Persona { get; set; }
-        public Nodo Siguiente { get; set; }
+        public NodoList Siguiente { get; set; }
     }
 }

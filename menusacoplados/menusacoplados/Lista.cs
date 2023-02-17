@@ -9,8 +9,8 @@ namespace menusacoplados
 {
     internal class Lista
     {
-        private Nodo primero = new Nodo();
-        private Nodo ultimo = new Nodo();
+        private NodoList primero = new NodoList();
+        private NodoList ultimo = new NodoList();
 
         public Lista()
         {
@@ -19,7 +19,7 @@ namespace menusacoplados
         }
         public void insertar(string persona)
         {
-            Nodo nuevo = new Nodo();
+            NodoList nuevo = new NodoList();
             nuevo.Persona = persona;
             if (primero == null)
             {
@@ -37,7 +37,7 @@ namespace menusacoplados
         }
         public void verlista(TextBox lista)
         {
-            Nodo actual = new Nodo();
+            NodoList actual = new NodoList();
             actual = primero;
             if (actual != null)
             {
@@ -55,7 +55,7 @@ namespace menusacoplados
         }
         public void buscar(string dato)
         {
-            Nodo actual = new Nodo();
+            NodoList actual = new NodoList();
             actual = primero;
             bool flag = false;
             string valBuscado = dato;
@@ -82,7 +82,7 @@ namespace menusacoplados
         }
         public void modificar(string persona1, string persona2)
         {
-            Nodo actual = new Nodo();
+            NodoList actual = new NodoList();
             actual = primero;
             bool flag = false;
             string valBuscado = persona1;
@@ -111,9 +111,9 @@ namespace menusacoplados
         }
         public void eliminar(string persona)
         {
-            Nodo actual = new Nodo();
+            NodoList actual = new NodoList();
             actual = primero;
-            Nodo anterior = new Nodo();
+            NodoList anterior = new NodoList();
             bool encontrado = false;
             string buscado = persona;
             if (actual != null)

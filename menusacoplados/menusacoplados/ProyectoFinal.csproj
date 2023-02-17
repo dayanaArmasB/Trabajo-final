@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bicola.cs" />
     <Compile Include="FrmArrayList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,7 +84,8 @@
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Lista.cs" />
-    <Compile Include="Nodo.cs" />
+    <Compile Include="NodoBicola.cs" />
+    <Compile Include="NodoList.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="FrmPilas.cs">
       <SubType>Form</SubType>
@@ -91,18 +93,18 @@
     <Compile Include="FrmPilas.Designer.cs">
       <DependentUpon>FrmPilas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCola1.cs">
+    <Compile Include="FrmCola.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCola1.Designer.cs">
-      <DependentUpon>FrmCola1.cs</DependentUpon>
+    <Compile Include="FrmCola.Designer.cs">
+      <DependentUpon>FrmCola.cs</DependentUpon>
     </Compile>
     <Compile Include="Producto.cs" />
-    <Compile Include="FrmCola2.cs">
+    <Compile Include="FrmBicola.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCola2.Designer.cs">
-      <DependentUpon>FrmCola2.cs</DependentUpon>
+    <Compile Include="FrmBicola.Designer.cs">
+      <DependentUpon>FrmBicola.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -127,11 +129,11 @@
     <EmbeddedResource Include="FrmPilas.resx">
       <DependentUpon>FrmPilas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCola1.resx">
-      <DependentUpon>FrmCola1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCola.resx">
+      <DependentUpon>FrmCola.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCola2.resx">
-      <DependentUpon>FrmCola2.cs</DependentUpon>
+    <EmbeddedResource Include="FrmBicola.resx">
+      <DependentUpon>FrmBicola.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
