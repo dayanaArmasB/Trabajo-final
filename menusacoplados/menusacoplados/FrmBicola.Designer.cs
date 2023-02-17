@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtBicola = new System.Windows.Forms.TextBox();
             this.txtNuevo = new System.Windows.Forms.TextBox();
             this.txtDato = new System.Windows.Forms.TextBox();
@@ -43,25 +42,17 @@
             this.btnCrear = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 267);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(864, 226);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
             // 
             // txtBicola
             // 
             this.txtBicola.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBicola.Location = new System.Drawing.Point(12, 209);
+            this.txtBicola.Location = new System.Drawing.Point(19, 255);
+            this.txtBicola.Multiline = true;
             this.txtBicola.Name = "txtBicola";
-            this.txtBicola.Size = new System.Drawing.Size(864, 26);
+            this.txtBicola.Size = new System.Drawing.Size(864, 51);
             this.txtBicola.TabIndex = 15;
             // 
             // txtNuevo
@@ -99,6 +90,7 @@
             this.btnDelDer.TabIndex = 6;
             this.btnDelDer.Text = "Del. Derecha";
             this.btnDelDer.UseVisualStyleBackColor = true;
+            this.btnDelDer.Click += new System.EventHandler(this.btnDelDer_Click);
             // 
             // btnDelIzq
             // 
@@ -109,6 +101,7 @@
             this.btnDelIzq.TabIndex = 7;
             this.btnDelIzq.Text = "De. Izquierda";
             this.btnDelIzq.UseVisualStyleBackColor = true;
+            this.btnDelIzq.Click += new System.EventHandler(this.btnDelIzq_Click);
             // 
             // btnModificar
             // 
@@ -119,6 +112,7 @@
             this.btnModificar.TabIndex = 8;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnBuscar
             // 
@@ -129,6 +123,7 @@
             this.btnBuscar.TabIndex = 9;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnEncDer
             // 
@@ -139,6 +134,7 @@
             this.btnEncDer.TabIndex = 10;
             this.btnEncDer.Text = "Encolar Der.";
             this.btnEncDer.UseVisualStyleBackColor = true;
+            this.btnEncDer.Click += new System.EventHandler(this.btnEncDer_Click);
             // 
             // btnVerBicola
             // 
@@ -149,6 +145,7 @@
             this.btnVerBicola.TabIndex = 11;
             this.btnVerBicola.Text = "Ver Bicola";
             this.btnVerBicola.UseVisualStyleBackColor = true;
+            this.btnVerBicola.Click += new System.EventHandler(this.btnVerBicola_Click);
             // 
             // btnEncIzq
             // 
@@ -159,6 +156,7 @@
             this.btnEncIzq.TabIndex = 12;
             this.btnEncIzq.Text = "Encolar Izq.";
             this.btnEncIzq.UseVisualStyleBackColor = true;
+            this.btnEncIzq.Click += new System.EventHandler(this.btnEncIzq_Click);
             // 
             // btnCrear
             // 
@@ -169,6 +167,7 @@
             this.btnCrear.TabIndex = 13;
             this.btnCrear.Text = "Crear Bicola";
             this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // panel1
             // 
@@ -191,13 +190,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Gestión de Bicolas";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(23, 223);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 18);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Ver Bicola:";
+            // 
             // FrmBicola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(904, 516);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(904, 343);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBicola);
             this.Controls.Add(this.txtNuevo);
             this.Controls.Add(this.txtDato);
@@ -215,7 +224,6 @@
             this.Text = " Bicola";
             this.Activated += new System.EventHandler(this.Form4_Activated);
             this.Load += new System.EventHandler(this.Form4_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -224,8 +232,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtBicola;
         private System.Windows.Forms.TextBox txtNuevo;
         private System.Windows.Forms.TextBox txtDato;
@@ -240,5 +246,6 @@
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

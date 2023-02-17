@@ -15,9 +15,12 @@ namespace menusacoplados
         FrmPilas P1 =new FrmPilas();
         FrmCola C1 = new FrmCola();
         FrmBicola B1 = new FrmBicola();
-        FrmListaSimple l1 = new FrmListaSimple();
-        FrmListasCiruclares l2 = new FrmListasCiruclares();
-        FrmArrayList l3 = new FrmArrayList();
+        FrmListaSimple L1 = new FrmListaSimple();
+        FrmListasCiruclares LC = new FrmListasCiruclares();
+        FrmArrayList AL = new FrmArrayList();
+        FrmLinqXml Xml = new FrmLinqXml();
+        FrmArbol2 T2 = new FrmArbol2();
+        FrmArbol1 T1 = new FrmArbol1();
         Autores au = new Autores();
         public FrmMenu()
         {
@@ -29,9 +32,11 @@ namespace menusacoplados
             P1.MdiParent = this;
             C1.MdiParent = this;
             B1.MdiParent = this;
-            l1.MdiParent = this; 
-            l2.MdiParent = this; 
-            l3.MdiParent = this;
+            L1.MdiParent = this;
+            LC.MdiParent = this;
+            AL.MdiParent = this;
+            Xml.MdiParent = this;
+            T2.MdiParent = this;
             au.MdiParent = this;
         }
 
@@ -40,9 +45,12 @@ namespace menusacoplados
             P1.Show();
             C1.Hide();
             B1.Hide();
-            l1.Hide();
-            l2.Hide();
-            l3.Hide();
+            L1.Hide();
+            LC.Hide();
+            AL.Hide();
+            Xml.Hide();
+            T2.Hide();
+            T1.Hide();
         }
 
         private void conHilosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,9 +58,12 @@ namespace menusacoplados
             P1.Hide();
             C1.Show();
             B1.Hide();
-            l1.Hide();
-            l2.Hide();
-            l3.Hide();
+            L1.Hide();
+            LC.Hide();
+            AL.Hide();
+            Xml.Hide();
+            T2.Hide();
+            T1.Hide();
         }
 
         private void conSeñalizerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -60,9 +71,12 @@ namespace menusacoplados
             P1.Hide();
             C1.Hide();
             B1.Show();
-            l1.Hide();
-            l2.Hide();
-            l3.Hide();
+            L1.Hide();
+            LC.Hide();
+            AL.Hide();
+            Xml.Hide();
+            T2.Hide();
+            T1.Hide();
         }
 
 
@@ -82,9 +96,12 @@ namespace menusacoplados
             P1.Hide();
             C1.Hide();
             B1.Hide();
-            l1.Show();
-            l2.Hide();
-            l3.Hide();
+            L1.Show();
+            LC.Hide();
+            AL.Hide();
+            Xml.Hide();
+            T2.Hide();
+            T1.Hide();
         }
 
         private void listaEnlazadaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -92,9 +109,12 @@ namespace menusacoplados
             P1.Hide();
             C1.Hide();
             B1.Hide();
-            l1.Hide();
-            l2.Show();
-            l3.Hide();
+            L1.Hide();
+            LC.Show();
+            AL.Hide();
+            Xml.Hide();
+            T2.Hide();
+            T1.Hide();
         }
 
         private void arrayListToolStripMenuItem_Click(object sender, EventArgs e)
@@ -102,9 +122,12 @@ namespace menusacoplados
             P1.Hide();
             C1.Hide();
             B1.Hide();
-            l1.Hide();
-            l2.Hide();
-            l3.Show();
+            L1.Hide();
+            LC.Hide();
+            AL.Show();
+            Xml.Hide();
+            T2.Hide();
+            T1.Hide();
         }
 
         private void autoresToolStripMenuItem_Click(object sender, EventArgs e)
@@ -120,6 +143,45 @@ namespace menusacoplados
         private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void p3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            P1.Hide();
+            C1.Hide();
+            B1.Hide();
+            L1.Hide();
+            LC.Hide();
+            AL.Hide();
+            Xml.Show();
+            T2.Hide();
+            T1.Hide();
+        }
+
+        private void Arbol2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            P1.Hide();
+            C1.Hide();
+            B1.Hide();
+            L1.Hide();
+            LC.Hide();
+            AL.Hide();
+            Xml.Hide();
+            T2.Show();
+            T1.Hide();
+        }
+
+        private void Arbol1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            P1.Hide();
+            C1.Hide();
+            B1.Hide();
+            L1.Hide();
+            LC.Hide();
+            AL.Hide();
+            Xml.Hide();
+            T2.Hide();
+            T1.Show();
         }
     }
 }

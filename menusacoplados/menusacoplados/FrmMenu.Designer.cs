@@ -35,17 +35,17 @@
             this.listaEnlazadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arrayListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aplicacionnesXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.conPilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.conLinQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.conSeñalizerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.arbolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.p1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.p2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Arbol1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Arbol2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.p3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.autoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.conPilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.conLinQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.conSeñalizerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,63 +109,41 @@
             this.aplicacionnesXMLToolStripMenuItem.Text = "Colas y Pilas";
             this.aplicacionnesXMLToolStripMenuItem.Click += new System.EventHandler(this.aplicacionnesXMLToolStripMenuItem_Click);
             // 
-            // conPilasToolStripMenuItem
-            // 
-            this.conPilasToolStripMenuItem.BackColor = System.Drawing.Color.FloralWhite;
-            this.conPilasToolStripMenuItem.Image = global::menusacoplados.Properties.Resources.Mi_proyecto;
-            this.conPilasToolStripMenuItem.Name = "conPilasToolStripMenuItem";
-            this.conPilasToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
-            this.conPilasToolStripMenuItem.Text = "Plila";
-            this.conPilasToolStripMenuItem.Click += new System.EventHandler(this.conPilasToolStripMenuItem_Click);
-            // 
-            // conLinQToolStripMenuItem
-            // 
-            this.conLinQToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("conLinQToolStripMenuItem.Image")));
-            this.conLinQToolStripMenuItem.Name = "conLinQToolStripMenuItem";
-            this.conLinQToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
-            this.conLinQToolStripMenuItem.Text = "Cola";
-            this.conLinQToolStripMenuItem.Click += new System.EventHandler(this.conHilosToolStripMenuItem_Click);
-            // 
-            // conSeñalizerToolStripMenuItem
-            // 
-            this.conSeñalizerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("conSeñalizerToolStripMenuItem.Image")));
-            this.conSeñalizerToolStripMenuItem.Name = "conSeñalizerToolStripMenuItem";
-            this.conSeñalizerToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
-            this.conSeñalizerToolStripMenuItem.Text = "Bicola";
-            this.conSeñalizerToolStripMenuItem.Click += new System.EventHandler(this.conSeñalizerToolStripMenuItem_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(181, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(103, 6);
             // 
             // arbolesToolStripMenuItem
             // 
             this.arbolesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.p1ToolStripMenuItem,
-            this.p2ToolStripMenuItem,
+            this.Arbol1ToolStripMenuItem,
+            this.Arbol2ToolStripMenuItem,
             this.p3ToolStripMenuItem});
             this.arbolesToolStripMenuItem.Name = "arbolesToolStripMenuItem";
             this.arbolesToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.arbolesToolStripMenuItem.Text = "Arboles";
             // 
-            // p1ToolStripMenuItem
+            // Arbol1ToolStripMenuItem
             // 
-            this.p1ToolStripMenuItem.Name = "p1ToolStripMenuItem";
-            this.p1ToolStripMenuItem.Size = new System.Drawing.Size(87, 22);
-            this.p1ToolStripMenuItem.Text = "P1";
+            this.Arbol1ToolStripMenuItem.Name = "Arbol1ToolStripMenuItem";
+            this.Arbol1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Arbol1ToolStripMenuItem.Text = "Arbol 1";
+            this.Arbol1ToolStripMenuItem.Click += new System.EventHandler(this.Arbol1ToolStripMenuItem_Click);
             // 
-            // p2ToolStripMenuItem
+            // Arbol2ToolStripMenuItem
             // 
-            this.p2ToolStripMenuItem.Name = "p2ToolStripMenuItem";
-            this.p2ToolStripMenuItem.Size = new System.Drawing.Size(87, 22);
-            this.p2ToolStripMenuItem.Text = "P2";
+            this.Arbol2ToolStripMenuItem.Name = "Arbol2ToolStripMenuItem";
+            this.Arbol2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Arbol2ToolStripMenuItem.Text = "Arbol 2";
+            this.Arbol2ToolStripMenuItem.Click += new System.EventHandler(this.Arbol2ToolStripMenuItem_Click);
             // 
             // p3ToolStripMenuItem
             // 
             this.p3ToolStripMenuItem.Name = "p3ToolStripMenuItem";
-            this.p3ToolStripMenuItem.Size = new System.Drawing.Size(87, 22);
-            this.p3ToolStripMenuItem.Text = "P3";
+            this.p3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.p3ToolStripMenuItem.Text = "XmlLinq";
+            this.p3ToolStripMenuItem.Click += new System.EventHandler(this.p3ToolStripMenuItem_Click);
             // 
             // informaciónToolStripMenuItem
             // 
@@ -190,6 +168,31 @@
             this.salirToolStripMenuItem1.Size = new System.Drawing.Size(115, 22);
             this.salirToolStripMenuItem1.Text = "Salir";
             this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
+            // 
+            // conPilasToolStripMenuItem
+            // 
+            this.conPilasToolStripMenuItem.BackColor = System.Drawing.Color.FloralWhite;
+            this.conPilasToolStripMenuItem.Image = global::menusacoplados.Properties.Resources.Mi_proyecto;
+            this.conPilasToolStripMenuItem.Name = "conPilasToolStripMenuItem";
+            this.conPilasToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.conPilasToolStripMenuItem.Text = "Plila";
+            this.conPilasToolStripMenuItem.Click += new System.EventHandler(this.conPilasToolStripMenuItem_Click);
+            // 
+            // conLinQToolStripMenuItem
+            // 
+            this.conLinQToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("conLinQToolStripMenuItem.Image")));
+            this.conLinQToolStripMenuItem.Name = "conLinQToolStripMenuItem";
+            this.conLinQToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.conLinQToolStripMenuItem.Text = "Cola";
+            this.conLinQToolStripMenuItem.Click += new System.EventHandler(this.conHilosToolStripMenuItem_Click);
+            // 
+            // conSeñalizerToolStripMenuItem
+            // 
+            this.conSeñalizerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("conSeñalizerToolStripMenuItem.Image")));
+            this.conSeñalizerToolStripMenuItem.Name = "conSeñalizerToolStripMenuItem";
+            this.conSeñalizerToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.conSeñalizerToolStripMenuItem.Text = "Bicola";
+            this.conSeñalizerToolStripMenuItem.Click += new System.EventHandler(this.conSeñalizerToolStripMenuItem_Click);
             // 
             // FrmMenu
             // 
@@ -225,8 +228,8 @@
         private System.Windows.Forms.ToolStripMenuItem listaSimpleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaEnlazadaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arrayListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem p1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem p2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Arbol1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Arbol2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem p3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem informaciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem autoresToolStripMenuItem;

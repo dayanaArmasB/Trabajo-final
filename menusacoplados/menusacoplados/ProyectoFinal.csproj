@@ -46,7 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arbol.cs" />
     <Compile Include="Bicola.cs" />
+    <Compile Include="FrmArbol1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArbol1.Designer.cs">
+      <DependentUpon>FrmArbol1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmArbol2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArbol2.Designer.cs">
+      <DependentUpon>FrmArbol2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmArrayList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +71,12 @@
     </Compile>
     <Compile Include="Autores.Designer.cs">
       <DependentUpon>Autores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLinqXml.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLinqXml.Designer.cs">
+      <DependentUpon>FrmLinqXml.cs</DependentUpon>
     </Compile>
     <Compile Include="InfoEdu.cs">
       <SubType>Form</SubType>
@@ -83,9 +102,10 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lista.cs" />
+    <Compile Include="ListaCirc.cs" />
+    <Compile Include="NodoArbol.cs" />
     <Compile Include="NodoBicola.cs" />
-    <Compile Include="NodoList.cs" />
+    <Compile Include="NodoListCirc.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="FrmPilas.cs">
       <SubType>Form</SubType>
@@ -108,11 +128,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmArbol1.resx">
+      <DependentUpon>FrmArbol1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmArbol2.resx">
+      <DependentUpon>FrmArbol2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmArrayList.resx">
       <DependentUpon>FrmArrayList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Autores.resx">
       <DependentUpon>Autores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLinqXml.resx">
+      <DependentUpon>FrmLinqXml.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfoEdu.resx">
       <DependentUpon>InfoEdu.cs</DependentUpon>

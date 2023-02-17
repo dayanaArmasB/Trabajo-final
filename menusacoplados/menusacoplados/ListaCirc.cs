@@ -7,19 +7,19 @@ using System.Windows.Forms;
 
 namespace menusacoplados
 {
-    internal class Lista
+    internal class ListaCirc
     {
-        private NodoList primero = new NodoList();
-        private NodoList ultimo = new NodoList();
+        private NodoListCirc primero = new NodoListCirc();
+        private NodoListCirc ultimo = new NodoListCirc();
 
-        public Lista()
+        public ListaCirc()
         {
             primero = null;
             ultimo = null;
         }
         public void insertar(string persona)
         {
-            NodoList nuevo = new NodoList();
+            NodoListCirc nuevo = new NodoListCirc();
             nuevo.Persona = persona;
             if (primero == null)
             {
@@ -37,7 +37,7 @@ namespace menusacoplados
         }
         public void verlista(TextBox lista)
         {
-            NodoList actual = new NodoList();
+            NodoListCirc actual = new NodoListCirc();
             actual = primero;
             if (actual != null)
             {
@@ -55,7 +55,7 @@ namespace menusacoplados
         }
         public void buscar(string dato)
         {
-            NodoList actual = new NodoList();
+            NodoListCirc actual = new NodoListCirc();
             actual = primero;
             bool flag = false;
             string valBuscado = dato;
@@ -82,7 +82,7 @@ namespace menusacoplados
         }
         public void modificar(string persona1, string persona2)
         {
-            NodoList actual = new NodoList();
+            NodoListCirc actual = new NodoListCirc();
             actual = primero;
             bool flag = false;
             string valBuscado = persona1;
@@ -111,9 +111,9 @@ namespace menusacoplados
         }
         public void eliminar(string persona)
         {
-            NodoList actual = new NodoList();
+            NodoListCirc actual = new NodoListCirc();
             actual = primero;
-            NodoList anterior = new NodoList();
+            NodoListCirc anterior = new NodoListCirc();
             bool encontrado = false;
             string buscado = persona;
             if (actual != null)

@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtCola = new System.Windows.Forms.TextBox();
             this.btnDesencolar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -42,7 +41,6 @@
             this.txtDato = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,26 +64,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Estructura de Datos - Colas (Queue)";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(126, 207);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(442, 151);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 31;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtCola
             // 
             this.txtCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCola.Location = new System.Drawing.Point(126, 156);
+            this.txtCola.Location = new System.Drawing.Point(136, 187);
             this.txtCola.Name = "txtCola";
             this.txtCola.Size = new System.Drawing.Size(442, 29);
             this.txtCola.TabIndex = 30;
             // 
             // btnDesencolar
             // 
-            this.btnDesencolar.Location = new System.Drawing.Point(126, 114);
+            this.btnDesencolar.Location = new System.Drawing.Point(136, 145);
             this.btnDesencolar.Name = "btnDesencolar";
             this.btnDesencolar.Size = new System.Drawing.Size(108, 30);
             this.btnDesencolar.TabIndex = 23;
@@ -171,9 +160,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(602, 451);
+            this.ClientSize = new System.Drawing.Size(602, 334);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtCola);
             this.Controls.Add(this.btnDesencolar);
             this.Controls.Add(this.btnModificar);
@@ -190,7 +178,6 @@
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,7 +187,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtCola;
         private System.Windows.Forms.Button btnDesencolar;
         private System.Windows.Forms.Button btnModificar;

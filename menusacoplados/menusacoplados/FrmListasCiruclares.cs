@@ -17,7 +17,7 @@ namespace menusacoplados
         {
             InitializeComponent();
         }
-        Lista objLista;
+        ListaCirc objLista;
 
         private void ListaEnlazada_Load(object sender, EventArgs e)
         {
@@ -66,7 +66,7 @@ namespace menusacoplados
 
         private void btnCrearLista_Click(object sender, EventArgs e)
         {
-            objLista = new Lista();
+            objLista = new ListaCirc();
             MessageBox.Show("Lista creada con exito ", "Lista", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
