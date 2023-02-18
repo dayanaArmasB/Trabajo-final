@@ -37,6 +37,7 @@ namespace menusacoplados
             AL.MdiParent = this;
             Xml.MdiParent = this;
             T2.MdiParent = this;
+            T1.MdiParent = this;
             au.MdiParent = this;
         }
 
