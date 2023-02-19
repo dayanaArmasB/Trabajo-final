@@ -60,6 +60,7 @@
             // 
             // btn_generar
             // 
+            this.btn_generar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_generar.Location = new System.Drawing.Point(175, 37);
             this.btn_generar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_generar.Name = "btn_generar";
@@ -72,7 +73,7 @@
             // dgw
             // 
             this.dgw.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgw.Location = new System.Drawing.Point(37, 362);
+            this.dgw.Location = new System.Drawing.Point(37, 315);
             this.dgw.Margin = new System.Windows.Forms.Padding(4);
             this.dgw.Name = "dgw";
             this.dgw.RowHeadersWidth = 51;
@@ -87,18 +88,18 @@
             this.groupBox2.Controls.Add(this.btnEliminar);
             this.groupBox2.Controls.Add(this.btnModificar);
             this.groupBox2.Controls.Add(this.btnAgregar);
-            this.groupBox2.Location = new System.Drawing.Point(480, 17);
+            this.groupBox2.Location = new System.Drawing.Point(480, 37);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(292, 323);
+            this.groupBox2.Size = new System.Drawing.Size(292, 250);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Opciones ";
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(16, 233);
+            this.btn_buscar.Location = new System.Drawing.Point(8, 192);
             this.btn_buscar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(261, 33);
@@ -109,7 +110,7 @@
             // 
             // btn_mezclar
             // 
-            this.btn_mezclar.Location = new System.Drawing.Point(16, 191);
+            this.btn_mezclar.Location = new System.Drawing.Point(8, 150);
             this.btn_mezclar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_mezclar.Name = "btn_mezclar";
             this.btn_mezclar.Size = new System.Drawing.Size(261, 33);
@@ -120,7 +121,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(16, 150);
+            this.btnEliminar.Location = new System.Drawing.Point(8, 109);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(261, 33);
@@ -131,7 +132,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(16, 109);
+            this.btnModificar.Location = new System.Drawing.Point(8, 68);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(261, 33);
@@ -142,7 +143,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(16, 68);
+            this.btnAgregar.Location = new System.Drawing.Point(8, 27);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(261, 33);
@@ -180,26 +181,26 @@
             // 
             // txt_telefono
             // 
-            this.txt_telefono.Location = new System.Drawing.Point(227, 137);
+            this.txt_telefono.Location = new System.Drawing.Point(151, 137);
             this.txt_telefono.Margin = new System.Windows.Forms.Padding(4);
             this.txt_telefono.Name = "txt_telefono";
-            this.txt_telefono.Size = new System.Drawing.Size(132, 22);
+            this.txt_telefono.Size = new System.Drawing.Size(208, 22);
             this.txt_telefono.TabIndex = 5;
             // 
             // txt_apellido
             // 
-            this.txt_apellido.Location = new System.Drawing.Point(227, 89);
+            this.txt_apellido.Location = new System.Drawing.Point(151, 89);
             this.txt_apellido.Margin = new System.Windows.Forms.Padding(4);
             this.txt_apellido.Name = "txt_apellido";
-            this.txt_apellido.Size = new System.Drawing.Size(132, 22);
+            this.txt_apellido.Size = new System.Drawing.Size(208, 22);
             this.txt_apellido.TabIndex = 4;
             // 
             // txt_nombre
             // 
-            this.txt_nombre.Location = new System.Drawing.Point(227, 38);
+            this.txt_nombre.Location = new System.Drawing.Point(151, 38);
             this.txt_nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(132, 22);
+            this.txt_nombre.Size = new System.Drawing.Size(208, 22);
             this.txt_nombre.TabIndex = 3;
             // 
             // label3
@@ -236,7 +237,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 615);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(800, 561);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_generar);
             this.Controls.Add(this.dgw);

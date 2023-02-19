@@ -86,8 +86,8 @@ namespace menusacoplados
 
             Excel._Worksheet Hoja = (Excel.Worksheet)excelApp.ActiveSheet;
             Hoja.Cells[1, "A"] = "#";
-            Hoja.Cells[1, "B"] = "APILAR";
-            Hoja.Cells[1, "C"] = "DESEMPILAR";
+            Hoja.Cells[1, "B"] = "APILAR NOMBRE";
+            Hoja.Cells[1, "C"] = "DESEMPILAR NOMBRES";
 
             var fila = 1;
             for (int n = 0; n < listBox1.Items.Count; n++)
@@ -96,18 +96,19 @@ namespace menusacoplados
                 Hoja.Cells[fila, "A"] = n + 1;
             }
 
-
+            var fila1 = 1;
             foreach (var item in listBox1.Items)
             {
-                fila++;
-                Hoja.Cells[fila, "B"] = item;
+                fila1++;
+                Hoja.Cells[fila1, "B"] = item;
                 Hoja.Columns[2].Autofit();
             }
 
+            var fila2 = 1;
             foreach (var item2 in listBox2.Items)
             {
-                fila++;
-                Hoja.Cells[fila, "C"] = item2;
+                fila2++;
+                Hoja.Cells[fila2, "C"] = item2;
                 Hoja.Columns[3].Autofit();
             }
         }

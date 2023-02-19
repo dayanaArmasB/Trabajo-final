@@ -284,16 +284,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo";
             // 
-            // ArrayList
+            // FrmArrayList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(780, 521);
             this.Controls.Add(this.dgw);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "ArrayList";
+            this.Name = "FrmArrayList";
             this.Text = "ArrayList";
             this.Activated += new System.EventHandler(this.ArrayList_Activated);
             this.Load += new System.EventHandler(this.ArrayList_Load);

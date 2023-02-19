@@ -49,8 +49,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(602, 48);
+            this.panel1.Size = new System.Drawing.Size(803, 59);
             this.panel1.TabIndex = 19;
             // 
             // label1
@@ -58,25 +59,28 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(4, 13);
+            this.label1.Location = new System.Drawing.Point(5, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(395, 25);
+            this.label1.Size = new System.Drawing.Size(489, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Estructura de Datos - Colas (Queue)";
             // 
             // txtCola
             // 
             this.txtCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCola.Location = new System.Drawing.Point(136, 187);
+            this.txtCola.Location = new System.Drawing.Point(181, 230);
+            this.txtCola.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCola.Name = "txtCola";
-            this.txtCola.Size = new System.Drawing.Size(442, 29);
+            this.txtCola.Size = new System.Drawing.Size(588, 34);
             this.txtCola.TabIndex = 30;
             // 
             // btnDesencolar
             // 
-            this.btnDesencolar.Location = new System.Drawing.Point(136, 145);
+            this.btnDesencolar.Location = new System.Drawing.Point(181, 178);
+            this.btnDesencolar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDesencolar.Name = "btnDesencolar";
-            this.btnDesencolar.Size = new System.Drawing.Size(108, 30);
+            this.btnDesencolar.Size = new System.Drawing.Size(144, 37);
             this.btnDesencolar.TabIndex = 23;
             this.btnDesencolar.Text = "Desencolar";
             this.btnDesencolar.UseVisualStyleBackColor = true;
@@ -84,9 +88,10 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(12, 258);
+            this.btnModificar.Location = new System.Drawing.Point(16, 318);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(100, 30);
+            this.btnModificar.Size = new System.Drawing.Size(133, 37);
             this.btnModificar.TabIndex = 25;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -94,9 +99,10 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(12, 222);
+            this.btnEliminar.Location = new System.Drawing.Point(16, 273);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(100, 30);
+            this.btnEliminar.Size = new System.Drawing.Size(133, 37);
             this.btnEliminar.TabIndex = 26;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -104,9 +110,10 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(12, 186);
+            this.btnBuscar.Location = new System.Drawing.Point(16, 229);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(100, 30);
+            this.btnBuscar.Size = new System.Drawing.Size(133, 37);
             this.btnBuscar.TabIndex = 27;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -114,9 +121,10 @@
             // 
             // btnVerCola
             // 
-            this.btnVerCola.Location = new System.Drawing.Point(12, 150);
+            this.btnVerCola.Location = new System.Drawing.Point(16, 185);
+            this.btnVerCola.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVerCola.Name = "btnVerCola";
-            this.btnVerCola.Size = new System.Drawing.Size(100, 30);
+            this.btnVerCola.Size = new System.Drawing.Size(133, 37);
             this.btnVerCola.TabIndex = 28;
             this.btnVerCola.Text = "Ver cola";
             this.btnVerCola.UseVisualStyleBackColor = true;
@@ -124,9 +132,10 @@
             // 
             // btnEncolar
             // 
-            this.btnEncolar.Location = new System.Drawing.Point(12, 114);
+            this.btnEncolar.Location = new System.Drawing.Point(16, 140);
+            this.btnEncolar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEncolar.Name = "btnEncolar";
-            this.btnEncolar.Size = new System.Drawing.Size(100, 30);
+            this.btnEncolar.Size = new System.Drawing.Size(133, 37);
             this.btnEncolar.TabIndex = 29;
             this.btnEncolar.Text = "Encolar";
             this.btnEncolar.UseVisualStyleBackColor = true;
@@ -134,33 +143,36 @@
             // 
             // txtNuevo
             // 
-            this.txtNuevo.Location = new System.Drawing.Point(12, 294);
+            this.txtNuevo.Location = new System.Drawing.Point(16, 362);
+            this.txtNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNuevo.Name = "txtNuevo";
-            this.txtNuevo.Size = new System.Drawing.Size(100, 20);
+            this.txtNuevo.Size = new System.Drawing.Size(132, 22);
             this.txtNuevo.TabIndex = 21;
             // 
             // txtDato
             // 
-            this.txtDato.Location = new System.Drawing.Point(12, 84);
+            this.txtDato.Location = new System.Drawing.Point(16, 103);
+            this.txtDato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDato.Name = "txtDato";
-            this.txtDato.Size = new System.Drawing.Size(100, 20);
+            this.txtDato.Size = new System.Drawing.Size(132, 22);
             this.txtDato.TabIndex = 22;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 63);
+            this.label2.Location = new System.Drawing.Point(12, 78);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 20;
             this.label2.Text = "Elemento:";
             // 
             // FrmCola
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(602, 334);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(803, 411);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtCola);
             this.Controls.Add(this.btnDesencolar);
@@ -172,6 +184,7 @@
             this.Controls.Add(this.txtNuevo);
             this.Controls.Add(this.txtDato);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmCola";
             this.Text = "Cola";
             this.Activated += new System.EventHandler(this.Form3_Activated);
