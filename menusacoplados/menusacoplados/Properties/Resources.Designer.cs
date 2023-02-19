@@ -63,6 +63,16 @@ namespace menusacoplados.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ABB1 {
+            get {
+                object obj = ResourceManager.GetObject("ABB1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap descarga_1 {
             get {
                 object obj = ResourceManager.GetObject("descarga_1", resourceCulture);
@@ -136,6 +146,16 @@ namespace menusacoplados.Properties {
         internal static System.Drawing.Bitmap My_project_1__9_ {
             get {
                 object obj = ResourceManager.GetObject("My project-1 (9)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Recorrido1 {
+            get {
+                object obj = ResourceManager.GetObject("Recorrido1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

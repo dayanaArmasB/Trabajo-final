@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<productos>
+  <producto>
+    <id>5</id>
+    <nombre>leche</nombre>
+    <precio>7</precio>
+    <cantidad>13</cantidad>
+    <total></total>
+  </producto>
+  <producto>
+    <id>5</id>
+    <nombre>pan</nombre>
+    <precio>0.2</precio>
+    <cantidad>15</cantidad>
+    <total></total>
+  </producto>
+  <producto>
+    <id>5</id>
+    <nombre>harina</nombre>
+    <precio>11</precio>
+    <cantidad>9</cantidad>
+    <total></total>
+  </producto>
+</productos>

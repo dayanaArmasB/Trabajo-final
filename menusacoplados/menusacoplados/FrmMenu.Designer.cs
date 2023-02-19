@@ -114,7 +114,7 @@
             this.conPilasToolStripMenuItem.BackColor = System.Drawing.Color.FloralWhite;
             this.conPilasToolStripMenuItem.Image = global::menusacoplados.Properties.Resources.Mi_proyecto;
             this.conPilasToolStripMenuItem.Name = "conPilasToolStripMenuItem";
-            this.conPilasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.conPilasToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.conPilasToolStripMenuItem.Text = "Plila";
             this.conPilasToolStripMenuItem.Click += new System.EventHandler(this.conPilasToolStripMenuItem_Click);
             // 
@@ -122,7 +122,7 @@
             // 
             this.conLinQToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("conLinQToolStripMenuItem.Image")));
             this.conLinQToolStripMenuItem.Name = "conLinQToolStripMenuItem";
-            this.conLinQToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.conLinQToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.conLinQToolStripMenuItem.Text = "Cola";
             this.conLinQToolStripMenuItem.Click += new System.EventHandler(this.conHilosToolStripMenuItem_Click);
             // 
@@ -130,14 +130,14 @@
             // 
             this.conSeñalizerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("conSeñalizerToolStripMenuItem.Image")));
             this.conSeñalizerToolStripMenuItem.Name = "conSeñalizerToolStripMenuItem";
-            this.conSeñalizerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.conSeñalizerToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.conSeñalizerToolStripMenuItem.Text = "Bicola";
             this.conSeñalizerToolStripMenuItem.Click += new System.EventHandler(this.conSeñalizerToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(130, 6);
             // 
             // arbolesToolStripMenuItem
             // 
@@ -152,21 +152,21 @@
             // Arbol1ToolStripMenuItem
             // 
             this.Arbol1ToolStripMenuItem.Name = "Arbol1ToolStripMenuItem";
-            this.Arbol1ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.Arbol1ToolStripMenuItem.Text = "Arbol 1";
+            this.Arbol1ToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.Arbol1ToolStripMenuItem.Text = "Arbol";
             this.Arbol1ToolStripMenuItem.Click += new System.EventHandler(this.Arbol1ToolStripMenuItem_Click);
             // 
             // Arbol2ToolStripMenuItem
             // 
             this.Arbol2ToolStripMenuItem.Name = "Arbol2ToolStripMenuItem";
-            this.Arbol2ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.Arbol2ToolStripMenuItem.Text = "Arbol 2";
+            this.Arbol2ToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.Arbol2ToolStripMenuItem.Text = "Arbol Binario de busqueda";
             this.Arbol2ToolStripMenuItem.Click += new System.EventHandler(this.Arbol2ToolStripMenuItem_Click);
             // 
             // p3ToolStripMenuItem
             // 
             this.p3ToolStripMenuItem.Name = "p3ToolStripMenuItem";
-            this.p3ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.p3ToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
             this.p3ToolStripMenuItem.Text = "XmlLinq";
             this.p3ToolStripMenuItem.Click += new System.EventHandler(this.p3ToolStripMenuItem_Click);
             // 
@@ -183,14 +183,14 @@
             // autoresToolStripMenuItem
             // 
             this.autoresToolStripMenuItem.Name = "autoresToolStripMenuItem";
-            this.autoresToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.autoresToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
             this.autoresToolStripMenuItem.Text = "Autores";
             this.autoresToolStripMenuItem.Click += new System.EventHandler(this.autoresToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem1
             // 
             this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(143, 26);
             this.salirToolStripMenuItem1.Text = "Salir";
             this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 
