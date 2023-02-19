@@ -51,7 +51,16 @@ namespace menusacoplados
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            bicola.buscar(int.Parse(txtDato.Text));
+            try
+            {
+                bicola.buscar(int.Parse(txtDato.Text));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
 
         private void btnModificar_Click(object sender, EventArgs e)

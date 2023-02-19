@@ -59,21 +59,30 @@ namespace menusacoplados
         }
         public void buscar(int valor)
         {
-            NodoBicola actual = primero;
-            bool flag = false;
-            while (actual != null && flag == false)
+            try
             {
-                if (actual.dato == valor)
+                NodoBicola actual = primero;
+                bool flag = false;
+                while (actual != null && flag == false)
                 {
-                    flag = true;
-                    MessageBox.Show(valor + " está en la bicola", "Bicolas",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (actual.dato == valor)
+                    {
+                        flag = true;
+                        MessageBox.Show(valor + " está en la bicola", "Bicolas",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    actual = actual.siguiente;
                 }
-                actual = actual.siguiente;
+                if (flag == false)
+                    MessageBox.Show(valor + " NO está en la bicola", "Bicolas",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (flag == false)
-                MessageBox.Show(valor + " NO está en la bicola", "Bicolas",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("error"+ ex);
+            }
+            
         }
         public void modificar(int valor, int nuevo)
         {
