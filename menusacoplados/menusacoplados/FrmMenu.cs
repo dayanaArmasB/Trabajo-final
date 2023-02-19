@@ -16,7 +16,7 @@ namespace menusacoplados
         FrmCola C1 = new FrmCola();
         FrmBicola B1 = new FrmBicola();
         FrmListaSimple L1 = new FrmListaSimple();
-        FrmListasCiruclares LC = new FrmListasCiruclares();
+        FrmListaEnlazadaS L2 = new FrmListaEnlazadaS();
         FrmArrayList AL = new FrmArrayList();
         FrmLinqXml Xml = new FrmLinqXml();
         FrmArbol2 T2 = new FrmArbol2();
@@ -33,7 +33,7 @@ namespace menusacoplados
             C1.MdiParent = this;
             B1.MdiParent = this;
             L1.MdiParent = this;
-            LC.MdiParent = this;
+            L2.MdiParent = this;
             AL.MdiParent = this;
             Xml.MdiParent = this;
             T2.MdiParent = this;
@@ -47,7 +47,7 @@ namespace menusacoplados
             C1.Hide();
             B1.Hide();
             L1.Hide();
-            LC.Hide();
+            L2.Hide();
             AL.Hide();
             Xml.Hide();
             T2.Hide();
@@ -60,7 +60,7 @@ namespace menusacoplados
             C1.Show();
             B1.Hide();
             L1.Hide();
-            LC.Hide();
+            L2.Hide();
             AL.Hide();
             Xml.Hide();
             T2.Hide();
@@ -73,7 +73,7 @@ namespace menusacoplados
             C1.Hide();
             B1.Show();
             L1.Hide();
-            LC.Hide();
+            L2.Hide();
             AL.Hide();
             Xml.Hide();
             T2.Hide();
@@ -98,7 +98,7 @@ namespace menusacoplados
             C1.Hide();
             B1.Hide();
             L1.Show();
-            LC.Hide();
+            L2.Hide();
             AL.Hide();
             Xml.Hide();
             T2.Hide();
@@ -111,7 +111,7 @@ namespace menusacoplados
             C1.Hide();
             B1.Hide();
             L1.Hide();
-            LC.Show();
+            L2.Show();
             AL.Hide();
             Xml.Hide();
             T2.Hide();
@@ -124,7 +124,7 @@ namespace menusacoplados
             C1.Hide();
             B1.Hide();
             L1.Hide();
-            LC.Hide();
+            L2.Hide();
             AL.Show();
             Xml.Hide();
             T2.Hide();
@@ -152,7 +152,7 @@ namespace menusacoplados
             C1.Hide();
             B1.Hide();
             L1.Hide();
-            LC.Hide();
+            L2.Hide();
             AL.Hide();
             Xml.Show();
             T2.Hide();
@@ -165,7 +165,7 @@ namespace menusacoplados
             C1.Hide();
             B1.Hide();
             L1.Hide();
-            LC.Hide();
+            L2.Hide();
             AL.Hide();
             Xml.Hide();
             T2.Show();
@@ -178,7 +178,7 @@ namespace menusacoplados
             C1.Hide();
             B1.Hide();
             L1.Hide();
-            LC.Hide();
+            L2.Hide();
             AL.Hide();
             Xml.Hide();
             T2.Hide();

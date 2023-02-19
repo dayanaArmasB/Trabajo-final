@@ -44,24 +44,39 @@ namespace menusacoplados
 
         private void btn_generar_Click(object sender, EventArgs e)
         {
+            try
             {
                 listado = new List<Persona>();
                 MessageBox.Show("lista creada con exito");
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Cree la lista");
+            }
+
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            contacto = new Persona();
-            contacto.nombre = txt_nombre.Text;
-            contacto.apellido = txt_apellido.Text;
-            contacto.telefono = txt_telefono.Text;
+            try
+            {
+                contacto = new Persona();
+                contacto.nombre = txt_nombre.Text;
+                contacto.apellido = txt_apellido.Text;
+                contacto.telefono = txt_telefono.Text;
 
-            listado.Add(contacto);
+                listado.Add(contacto);
 
-            Refresh(listado);
-            MessageBox.Show("contacto Registrado", "Mensaje");
-            limpiar();
+                Refresh(listado);
+                MessageBox.Show("contacto Registrado", "Mensaje");
+                limpiar();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("ingrese los tipo de datos correctos");
+                limpiar();
+            }
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
