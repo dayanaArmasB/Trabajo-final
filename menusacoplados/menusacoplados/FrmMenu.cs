@@ -19,7 +19,7 @@ namespace menusacoplados
         FrmListaEnlazadaS L2 = new FrmListaEnlazadaS();
         FrmArrayList AL = new FrmArrayList();
         FrmLinqXml Xml = new FrmLinqXml();
-        FrmArbol2 T2 = new FrmArbol2();
+        FrmArbolBB T2 = new FrmArbolBB();
         FrmArbol1 T1 = new FrmArbol1();
         Autores au = new Autores();
         public FrmMenu()

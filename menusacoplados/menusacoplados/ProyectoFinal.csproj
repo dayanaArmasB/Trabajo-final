@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arbol.cs" />
+    <Compile Include="ArbolBB.cs" />
     <Compile Include="Bicola.cs" />
     <Compile Include="FrmArbol1.cs">
       <SubType>Form</SubType>
@@ -54,11 +54,11 @@
     <Compile Include="FrmArbol1.Designer.cs">
       <DependentUpon>FrmArbol1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmArbol2.cs">
+    <Compile Include="FrmArbolBB.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmArbol2.Designer.cs">
-      <DependentUpon>FrmArbol2.cs</DependentUpon>
+    <Compile Include="FrmArbolBB.Designer.cs">
+      <DependentUpon>FrmArbolBB.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmArrayList.cs">
       <SubType>Form</SubType>
@@ -102,7 +102,6 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="NodoArbol.cs" />
     <Compile Include="NodoBicola.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="FrmPilas.cs">
@@ -129,8 +128,8 @@
     <EmbeddedResource Include="FrmArbol1.resx">
       <DependentUpon>FrmArbol1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmArbol2.resx">
-      <DependentUpon>FrmArbol2.cs</DependentUpon>
+    <EmbeddedResource Include="FrmArbolBB.resx">
+      <DependentUpon>FrmArbolBB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmArrayList.resx">
       <DependentUpon>FrmArrayList.cs</DependentUpon>
