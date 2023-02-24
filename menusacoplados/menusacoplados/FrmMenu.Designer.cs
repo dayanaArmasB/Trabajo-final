@@ -46,6 +46,10 @@
             this.informaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.autoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.grafosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.grafoDijkstra1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.grafoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listasCircularesYDoblesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +60,8 @@
             this.listasToolStripMenuItem,
             this.aplicacionnesXMLToolStripMenuItem,
             this.arbolesToolStripMenuItem,
-            this.informaciónToolStripMenuItem});
+            this.informaciónToolStripMenuItem,
+            this.grafosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -70,7 +75,8 @@
             this.listasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listaSimpleToolStripMenuItem,
             this.listaEnlazadaToolStripMenuItem,
-            this.arrayListToolStripMenuItem});
+            this.arrayListToolStripMenuItem,
+            this.listasCircularesYDoblesToolStripMenuItem});
             this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
             this.listasToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.listasToolStripMenuItem.Text = "Listas";
@@ -78,21 +84,21 @@
             // listaSimpleToolStripMenuItem
             // 
             this.listaSimpleToolStripMenuItem.Name = "listaSimpleToolStripMenuItem";
-            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(248, 26);
+            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.listaSimpleToolStripMenuItem.Text = "Lista Enlazada Simple 1";
             this.listaSimpleToolStripMenuItem.Click += new System.EventHandler(this.listaSimpleToolStripMenuItem_Click);
             // 
             // listaEnlazadaToolStripMenuItem
             // 
             this.listaEnlazadaToolStripMenuItem.Name = "listaEnlazadaToolStripMenuItem";
-            this.listaEnlazadaToolStripMenuItem.Size = new System.Drawing.Size(248, 26);
+            this.listaEnlazadaToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.listaEnlazadaToolStripMenuItem.Text = "Lista Enlazada Simple 2";
             this.listaEnlazadaToolStripMenuItem.Click += new System.EventHandler(this.listaEnlazadaToolStripMenuItem_Click);
             // 
             // arrayListToolStripMenuItem
             // 
             this.arrayListToolStripMenuItem.Name = "arrayListToolStripMenuItem";
-            this.arrayListToolStripMenuItem.Size = new System.Drawing.Size(248, 26);
+            this.arrayListToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
             this.arrayListToolStripMenuItem.Text = "ArrayList";
             this.arrayListToolStripMenuItem.Click += new System.EventHandler(this.arrayListToolStripMenuItem_Click);
             // 
@@ -194,6 +200,36 @@
             this.salirToolStripMenuItem1.Text = "Salir";
             this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 
+            // grafosToolStripMenuItem
+            // 
+            this.grafosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.grafoDijkstra1ToolStripMenuItem,
+            this.grafoToolStripMenuItem});
+            this.grafosToolStripMenuItem.Name = "grafosToolStripMenuItem";
+            this.grafosToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.grafosToolStripMenuItem.Text = "Grafos";
+            // 
+            // grafoDijkstra1ToolStripMenuItem
+            // 
+            this.grafoDijkstra1ToolStripMenuItem.Name = "grafoDijkstra1ToolStripMenuItem";
+            this.grafoDijkstra1ToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.grafoDijkstra1ToolStripMenuItem.Text = "Grafo Dijkstra 1";
+            this.grafoDijkstra1ToolStripMenuItem.Click += new System.EventHandler(this.grafoDijkstra1ToolStripMenuItem_Click);
+            // 
+            // grafoToolStripMenuItem
+            // 
+            this.grafoToolStripMenuItem.Name = "grafoToolStripMenuItem";
+            this.grafoToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.grafoToolStripMenuItem.Text = "Grafo";
+            this.grafoToolStripMenuItem.Click += new System.EventHandler(this.grafoToolStripMenuItem_Click);
+            // 
+            // listasCircularesYDoblesToolStripMenuItem
+            // 
+            this.listasCircularesYDoblesToolStripMenuItem.Name = "listasCircularesYDoblesToolStripMenuItem";
+            this.listasCircularesYDoblesToolStripMenuItem.Size = new System.Drawing.Size(258, 26);
+            this.listasCircularesYDoblesToolStripMenuItem.Text = "Listas Circulares y Dobles";
+            this.listasCircularesYDoblesToolStripMenuItem.Click += new System.EventHandler(this.listasCircularesYDoblesToolStripMenuItem_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -235,6 +271,10 @@
         private System.Windows.Forms.ToolStripMenuItem informaciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem autoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem grafosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem grafoDijkstra1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem grafoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listasCircularesYDoblesToolStripMenuItem;
     }
 }
 

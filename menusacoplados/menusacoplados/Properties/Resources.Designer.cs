@@ -73,6 +73,16 @@ namespace menusacoplados.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_20230219_203744 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla_20230219_203744", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap descarga_1 {
             get {
                 object obj = ResourceManager.GetObject("descarga_1", resourceCulture);

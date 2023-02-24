@@ -21,6 +21,9 @@ namespace menusacoplados
         FrmLinqXml Xml = new FrmLinqXml();
         FrmArbolBB T2 = new FrmArbolBB();
         FrmArbol1 T1 = new FrmArbol1();
+        FrmDijkstra1 G1 = new FrmDijkstra1();
+        FrmGrafo G2 = new FrmGrafo();
+        FrmListaCricDobl L3 = new FrmListaCricDobl();
         Autores au = new Autores();
         public FrmMenu()
         {
@@ -38,6 +41,9 @@ namespace menusacoplados
             Xml.MdiParent = this;
             T2.MdiParent = this;
             T1.MdiParent = this;
+            G1.MdiParent = this;
+            G2.MdiParent = this;
+            L3.MdiParent = this;
             au.MdiParent = this;
         }
 
@@ -52,6 +58,9 @@ namespace menusacoplados
             Xml.Hide();
             T2.Hide();
             T1.Hide();
+            G1.Hide();
+            G2.Hide();
+            L3.Hide();
         }
 
         private void conHilosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,6 +74,9 @@ namespace menusacoplados
             Xml.Hide();
             T2.Hide();
             T1.Hide();
+            G1.Hide();
+            G2.Hide();
+            L3.Hide();
         }
 
         private void conSeñalizerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -78,6 +90,9 @@ namespace menusacoplados
             Xml.Hide();
             T2.Hide();
             T1.Hide();
+            G1.Hide();
+            G2.Hide();
+            L3.Hide();
         }
 
 
@@ -103,6 +118,9 @@ namespace menusacoplados
             Xml.Hide();
             T2.Hide();
             T1.Hide();
+            G1.Hide();
+            G2.Hide();
+            L3.Hide();
         }
 
         private void listaEnlazadaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -116,6 +134,9 @@ namespace menusacoplados
             Xml.Hide();
             T2.Hide();
             T1.Hide();
+            G1.Hide();
+            G2.Hide();
+            L3.Hide();
         }
 
         private void arrayListToolStripMenuItem_Click(object sender, EventArgs e)
@@ -129,6 +150,9 @@ namespace menusacoplados
             Xml.Hide();
             T2.Hide();
             T1.Hide();
+            G1.Hide();
+            G2.Hide();
+            L3.Hide();
         }
 
         private void autoresToolStripMenuItem_Click(object sender, EventArgs e)
@@ -157,6 +181,9 @@ namespace menusacoplados
             Xml.Show();
             T2.Hide();
             T1.Hide();
+            G1.Hide();
+            G2.Hide();
+            L3.Hide();
         }
 
         private void Arbol2ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -170,6 +197,9 @@ namespace menusacoplados
             Xml.Hide();
             T2.Show();
             T1.Hide();
+            G1.Hide();
+            G2.Hide();
+            L3.Hide();
         }
 
         private void Arbol1ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -183,6 +213,57 @@ namespace menusacoplados
             Xml.Hide();
             T2.Hide();
             T1.Show();
+            G1.Hide();
+            G2.Hide();
+            L3.Hide();
+        }
+
+        private void grafoDijkstra1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            P1.Hide();
+            C1.Hide();
+            B1.Hide();
+            L1.Hide();
+            L2.Hide();
+            AL.Hide();
+            Xml.Hide();
+            T2.Hide();
+            T1.Hide();
+            G1.Show();
+            G2.Hide();
+            L3.Hide();
+        }
+
+        private void grafoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            P1.Hide();
+            C1.Hide();
+            B1.Hide();
+            L1.Hide();
+            L2.Hide();
+            AL.Hide();
+            Xml.Hide();
+            T2.Hide();
+            T1.Hide();
+            G1.Hide();
+            G2.Show();
+            L3.Hide();
+        }
+
+        private void listasCircularesYDoblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            P1.Hide();
+            C1.Hide();
+            B1.Hide();
+            L1.Hide();
+            L2.Hide();
+            AL.Hide();
+            Xml.Hide();
+            T2.Hide();
+            T1.Hide();
+            G1.Hide();
+            G2.Hide();
+            L3.Show();
         }
     }
 }

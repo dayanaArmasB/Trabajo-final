@@ -48,6 +48,30 @@
   <ItemGroup>
     <Compile Include="ArbolBB.cs" />
     <Compile Include="Bicola.cs" />
+    <Compile Include="FrmListaCricDobl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaCricDobl.designer.cs">
+      <DependentUpon>FrmListaCricDobl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarshall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarshall.Designer.cs">
+      <DependentUpon>FrmWarshall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGrafo.Designer.cs">
+      <DependentUpon>FrmGrafo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDijkstra1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDijkstra1.designer.cs">
+      <DependentUpon>FrmDijkstra1.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmArbol1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +102,8 @@
     <Compile Include="FrmLinqXml.Designer.cs">
       <DependentUpon>FrmLinqXml.cs</DependentUpon>
     </Compile>
+    <Compile Include="Grafo.cs" />
+    <Compile Include="GrafoDijkstra1.cs" />
     <Compile Include="InfoEdu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +128,10 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lista.cs" />
+    <Compile Include="Lista2.cs" />
+    <Compile Include="Nodo.cs" />
+    <Compile Include="Nodo2.cs" />
     <Compile Include="NodoBicola.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="FrmPilas.cs">
@@ -125,6 +155,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmListaCricDobl.resx">
+      <DependentUpon>FrmListaCricDobl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGrafo.resx">
+      <DependentUpon>FrmGrafo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDijkstra1.resx">
+      <DependentUpon>FrmDijkstra1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmArbol1.resx">
       <DependentUpon>FrmArbol1.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLinqXml.resx">
       <DependentUpon>FrmLinqXml.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarshall.resx">
+      <DependentUpon>FrmWarshall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfoEdu.resx">
       <DependentUpon>InfoEdu.cs</DependentUpon>
@@ -242,6 +284,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Recorrido1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla_20230219_203744.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
