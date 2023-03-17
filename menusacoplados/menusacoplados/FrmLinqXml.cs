@@ -1,4 +1,5 @@
-﻿using System;
+﻿using menusacoplados.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -119,23 +120,8 @@ namespace menusacoplados
 
         private void btn_excel_Click(object sender, EventArgs e)
         {
-            var excelApp = new Excel.Application();
-
-            excelApp.Visible = true;
-            excelApp.Workbooks.Add();
-
-            Excel._Worksheet Hoja = (Excel.Worksheet)excelApp.ActiveSheet;
-
-            //exportar lo datos de un datagridview a excel
-
-            foreach (DataGridViewColumn columna in dataGridView1.Columns)
-            {
-                Hoja.Cells[1, columna.Index + 1] = columna.HeaderText;
-                foreach (DataGridViewRow fila in dataGridView1.Rows)
-                {
-                    Hoja.Cells[fila.Index + 2, columna.Index + 1] = fila.Cells[columna.Index].Value;
-                }
-            }
+            ExcelService exc = new ExcelService();
+            exc.CrearExcelApp(dataGridView1);
         }
 
         private void button2_Click(object sender, EventArgs e)

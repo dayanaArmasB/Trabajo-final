@@ -155,6 +155,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ExcelService.cs" />
     <EmbeddedResource Include="FrmListaCricDobl.resx">
       <DependentUpon>FrmListaCricDobl.cs</DependentUpon>
     </EmbeddedResource>
